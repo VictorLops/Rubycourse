@@ -7,7 +7,7 @@ loop do
 
   puts "\n seja bem-vindos ao tutorial"
 
-  puts "\n escolha sua magia logo a baixo"
+  puts "\n escolha sua habilidade logo abaixo"
 
 
   puts '1 - água'
