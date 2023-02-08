@@ -9,7 +9,8 @@ loop do
   puts '2 - subtração'
   puts '3 - divisão'
   puts '4 - mutiplicação'
-  puts '5 - sair'
+  puts '5 - raiz quadrada'
+  puts '6 - sair'
   print 'Opção: '
 
   option = gets.chomp.to_i
@@ -31,21 +32,29 @@ loop do
   elsif option == 3
     print 'Digite o numero: '
     primeiro_numero = gets.chomp.to_i
-    print 'Digite o numero numero da sua subtração: '
+    print 'Digite o numero numero da sua divisão: '
     segundo_numero = gets.chomp.to_i
+    if segundo_numero == 0
+      segundo_numero = 1
+    end
     resultado = primeiro_numero / segundo_numero
     resultado = "o resultado da sua conta e #{resultado}"
   elsif option == 4
     print 'Digite o numero: '
     primeiro_numero = gets.chomp.to_i
-    print 'Digite o numero numero da sua subtração: '
+    print 'Digite o numero numero da sua mutiplicação: '
     segundo_numero = gets.chomp.to_i
     resultado = primeiro_numero * segundo_numero
     resultado = "o resultado da sua conta e #{resultado}"
   elsif option == 5
+    print 'Digite o numero: '
+    val1 = gets.chomp.to_F
+    resultado = Math.sqrt(val1)
+    resultado = "o resultado da sua conta é #{resultado}"
+  elsif option == 6
     break
   else
-    resultado = 'Opção inválida'
+    resultado = 'Opção inválido'
   end
   system 'clear'
 end
