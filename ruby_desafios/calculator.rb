@@ -1,14 +1,14 @@
-puts 'Bem-vindo a minha calculadora! '-''
+puts "Bem-vindo a minha calculadora!"
 
 resultado = ''
 loop do
   puts resultado
   puts 'selecione uma das seguintes opções'
 
-  puts '1 - adição'
-  puts '2 - subtração'
-  puts '3 - divisão'
-  puts '4 - mutiplicação'
+  puts '1 - Adição'
+  puts '2 - Subtração'
+  puts '3 - Divisão'
+  puts '4 - Multiplicação'
   puts '5 - raiz quadrada'
   puts '6 - sair'
   print 'Opção: '
