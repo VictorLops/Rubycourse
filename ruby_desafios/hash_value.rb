@@ -1,14 +1,16 @@
-numbers = {a: 40, b: 30, c:20, d:25, e: 15 }
+require 'pry-byebug'
 
-maior = 0
+numbers = {a: 19, b: 30, c: 20, d: 25, e: 45 }
 
-valor_final = []
+max = 0
 
-numbers.each do |keys, value|
-  if value > maior
-    maior = value
-    valor_final = [keys,value]
+
+numbers.each do |key, value|
+  binding.pry
+  if value > max
+    max = value
   end
+  binding.pry
 end
 
 puts "o maior numero encontrado é #{valor_final}"
